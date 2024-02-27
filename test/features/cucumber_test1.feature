@@ -1,20 +1,23 @@
-# file:features/tutorial01_basics.feature
-Feature: Showing off behave (tutorial01)
+Feature: Showing off behave behave Cucumber with python
 
-  Scenario: Run a simple test
-    Given person is in dark forrest with "matches"
+  Scenario: Use Magnifying glass to start fire
+    Given person is in dark forrest with magnifying glass
     When we start a fire
-    And we drop the firestarter
     Then it is less dark
-    And we still have the "matches"
+    When we drop the firestarter
+    And we pick up wooden sticks and eat some lasagne
+    Then we still have the wooden sticks
+
+
+  Scenario: Flash light
+    Given person is in dark forrest with matches
+    When we start a fire
+    Then it is less dark
+    And we still have the matches
+#    And we drop the firestarter
 
   Scenario: Go to forrest with matches
-    Given person is in dark forrest with "lighter"
+    Given person is in dark forrest with lighter
     When we start a fire
     Then it is less dark
-    And we still have the "matches"
-#
-#  Scenario: Run a simple test 2
-#    Given we have behave installed
-#    When we implement a test
-#    Then behave will test it for us!
+    And we still have the lighter
